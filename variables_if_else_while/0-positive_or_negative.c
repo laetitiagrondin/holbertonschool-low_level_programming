@@ -3,12 +3,12 @@
 #include <time.h>
 
 /**
- * main Entry - point
+ * main - Entry point
  *
- * Description : it generates a random number and checks whether it is
+ * Description : This function generates a random number and checks whether it is
  * positive, zero or negative, printing the corresponding result.
  *
- * Return: Always 0
+ * This function always returns 0. That means this is a success.
  */
 
 int main(void)
