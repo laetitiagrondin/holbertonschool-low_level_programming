@@ -5,8 +5,8 @@
 /**
  * main Entry - point
  *
- * Description : it generates a random number and checks whether it is positive,
- * zero or negative, printing the corresponding result.
+ * Description : it generates a random number and checks whether it is
+ * positive, zero or negative, printing the corresponding result.
  *
  * Return: Always 0
  */
