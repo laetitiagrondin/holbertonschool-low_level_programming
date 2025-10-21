@@ -5,11 +5,11 @@
 /**
  * main - Entry point
  *
- * Description : This function generates a random number
+ * Description: This function generates a random number
  * and checks whether it is positive,
  * zero or negative, printing the corresponding result.
  *
- * This function always returns 0. That means this is a success.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
