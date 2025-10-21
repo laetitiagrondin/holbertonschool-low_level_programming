@@ -1,0 +1,18 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: This function prints lowercase alphabet in reverse,
+ * followed by a new line.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char x;
+
+	for (x = 'z'; x >= 'a'; c--)
+		putchar(n + '0');
+	putchar('\n');
+	return (0);
+}
