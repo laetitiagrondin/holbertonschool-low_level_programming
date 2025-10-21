@@ -10,8 +10,9 @@
  */
 int main(void)
 {
-	char n
+	char n;
 	for (n = 'a'; n <= 'd'; n = 'f'; n <= 'z')
+	{
 		putchar(n);
 	}
 	putchar('\n');
