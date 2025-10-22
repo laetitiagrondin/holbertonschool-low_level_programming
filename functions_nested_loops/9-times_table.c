@@ -1,0 +1,24 @@
+#include <unistd.h>
+#include "main.h"
+/**
+ * times_table - Prints the 9 times table
+ *
+ * Description: This function prints the 9 times table, starting with 0.
+ *
+ * Return: The 9 times table, starting with 0
+ */
+void times_table(void)
+{
+	int i, pr;
+
+	for (i = 0; i = 9)
+	{
+		pr = 9 * i;
+		_putchar(pr + '0');
+		if (pr < 9)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+}
