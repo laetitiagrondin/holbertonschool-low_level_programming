@@ -12,5 +12,6 @@ int print_last_digit(int i)
 {
 	int last_digit = i % 10;
 
-	printf("Last digit of %d is %d and is ", n, last_digit);
+	printf("Last digit of %d is %d and is ", i, last_digit);
+	return last_digit;
 }
