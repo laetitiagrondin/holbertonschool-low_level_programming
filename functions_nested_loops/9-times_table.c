@@ -16,16 +16,22 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			pr = i * j;
-			if (pr > 10)
+			if (pr > 9)
 			{
 				_putchar(pr / 10 + '0');
 				_putchar(pr % 10 + '0');
 			}
 			else
 			{
+				if (j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				_putchar(' ');
 				_putchar(pr + '0');
 			}
-			if (i < 9)
+			if (j < 9)
 			{
 			_putchar(',');
 			_putchar(' ');
