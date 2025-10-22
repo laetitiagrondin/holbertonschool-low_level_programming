@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char c);
-void islower(void);
+void _islower(int c);
 
 #endif /* MAIN_H */
