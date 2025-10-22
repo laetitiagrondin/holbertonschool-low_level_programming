@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_sign - Prints the sign of a number
+ * @n: The character to print
  *
  * Description: This function prints the sign of a number.
  *
