@@ -10,7 +10,7 @@
  *
  * Return: The sum of a and b
  */
-int add(int, int);
+int add(int, int)
 {
 	int a, b;
 
