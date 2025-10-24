@@ -6,7 +6,7 @@
  * Description: This function prints the alphabet,
  * in lowercase, followed by a new line.
  *
- * Return: Alway 0 (Success)
+ * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
