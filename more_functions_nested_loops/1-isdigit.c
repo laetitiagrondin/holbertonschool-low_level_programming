@@ -8,9 +8,7 @@
  */
 int _isdigit(int c)
 {
-	last_digit = c % 10;
-
-	if (last_digit >= 0 && last_digit < 10)
+	if (c >= 0 && c < 10)
 		return (1);
 	return (0);
 }
