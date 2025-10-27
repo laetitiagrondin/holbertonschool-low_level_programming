@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - Draws a straight line in the terminal
- *
+ * @n: number of times to print '_'
  * Return: Nothing
  */
 void print_line(int n)
