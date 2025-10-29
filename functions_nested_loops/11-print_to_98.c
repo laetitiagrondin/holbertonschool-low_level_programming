@@ -7,7 +7,7 @@
  * Description: This function prints all natural numbers
  * from n to 98, followed by a new line.
  *
- * Return: All natural numbers from n to 98
+ * Return: Void
  */
 void print_to_98(int n)
 {
