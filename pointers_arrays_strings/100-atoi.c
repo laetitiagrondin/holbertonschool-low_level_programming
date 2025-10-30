@@ -21,9 +21,6 @@ int _atoi(char *s)
 		{
 			return(s[i] - '0');
 		}
-		else
-		{
-			return (0);
-		}
 	}
+	return (0);
 }
