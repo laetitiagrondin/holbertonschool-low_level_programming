@@ -8,15 +8,20 @@
  */
 int _atoi(char *s)
 {
-        int i;
-        int len = 0;
-
-        for (i = 0; i < len; i++)
-        {
-                while (i <= 0 && i >= 9)
-                {
-                        print(i);
-                        i++;
-                }
-        }
+	int i;
+	int len = 0;
+	
+	while (s[len] != '\0')
+	{
+		len++
+	}
+	for (i = 0; i < len; i++)
+	{
+		while (s[i] != '\0' && (i >= '0' && i <= '9'))
+		{
+			putchar(i);
+			i++;
+		}
+	}
+	return (0);
 }
