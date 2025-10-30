@@ -4,7 +4,7 @@
  * followed by a new line
  * @n: number of elements
  */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i;
 
