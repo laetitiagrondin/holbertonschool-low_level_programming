@@ -13,13 +13,13 @@ int _atoi(char *s)
 	
 	while (s[len] != '\0')
 	{
-		len++
+		len++;
 	}
 	for (i = 0; i < len; i++)
 	{
 		while (s[i] != '\0' && (i >= '0' && i <= '9'))
 		{
-			putchar(i);
+			_putchar(i);
 			i++;
 		}
 	}
