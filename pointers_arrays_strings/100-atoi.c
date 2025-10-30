@@ -17,9 +17,9 @@ int _atoi(char *s)
 	}
 	for (i = 0; i < len; i++)
 	{
-		while (s[i] != '\0' && (i >= '0' && i <= '9'))
+		while (s[i] != '\0' && (s[i] >= '0' && s[i] <= '9'))
 		{
-			_putchar(i);
+			_putchar(s[i]);
 			i++;
 		}
 	}
