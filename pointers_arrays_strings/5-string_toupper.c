@@ -6,7 +6,7 @@
  * Return: The modified string with all lowercase letters
  * converted to uppercase
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i;
 
@@ -14,5 +14,5 @@ char *string_toupper(char *)
 	{
 		str[i] = toupper(str[i])
 	}
-	return res;
+	return str;
 }
