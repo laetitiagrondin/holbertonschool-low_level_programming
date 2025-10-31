@@ -9,6 +9,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
+	int j;
 	int len = 0;
 	int res = 0;
 	
@@ -24,8 +25,11 @@ int _atoi(char *s)
 	{
 		for (i = 0; i < len; i++)
 		{
-			res = res * 10 + (s[i] - '0');
+			j = s[i] - '0';
+			res = res * 10 + j;
 		}
 	}
 	return (res);
 }
+
+141
