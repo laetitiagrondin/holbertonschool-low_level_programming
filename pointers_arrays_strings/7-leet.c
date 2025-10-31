@@ -23,7 +23,7 @@ char *leet(char *s)
 		{
 			s[i] = '0';
 		}
-		else if (s[i] == 't' || s[T] == 'T')
+		else if (s[i] == 't' || s[i] == 'T')
 		{
 			s[i] = '7';
 		}
