@@ -12,7 +12,10 @@ char *string_toupper(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		str[i] = toupper(str[i]);
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] = str[i] - ('a' - 'A');
+		}
 	}
 	return str;
 }
