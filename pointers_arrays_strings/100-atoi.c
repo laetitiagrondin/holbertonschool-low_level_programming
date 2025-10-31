@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int j;
+	int j = 0;
 	int len = 0;
 	int res = 0;
 	
