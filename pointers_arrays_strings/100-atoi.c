@@ -8,23 +8,26 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int len, res = 0;
+	int i = 0;
+	int len = 0;
+	int res = 0;
 	
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	if (s[i] < '0' && s[i] > '9')
+	if (s[i] < '0' || s[i] > '9')
 	{
 		return (0);
 	}
-	for (i = 0; i < len; i++)
+	else
 	{
-		while (s[i] >= '0' && s[i] <= '9')
+		for (i = 0; i < len; i++)
 		{
 			res = res * 10 + (s[i] - '0');
 			i++;
 		}
+	}
+	return (res)
 	}
 }
