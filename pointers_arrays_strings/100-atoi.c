@@ -25,7 +25,6 @@ int _atoi(char *s)
 		for (i = 0; i < len; i++)
 		{
 			res = res * 10 + (s[i] - '0');
-			i++;
 		}
 	}
 	return (res);
