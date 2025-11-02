@@ -4,7 +4,7 @@
  * @s: the string to be encoded
  *
  * Return: The encoded string
-i */
+ */
 char *leet(char *s)
 {
 	int i, j;
@@ -12,10 +12,10 @@ char *leet(char *s)
 	char lett[] = "aAeEoOtTlL";
 
 	for (i = 0; s[i] != '\0'; i++)
-	{
+	i{
 		for (j = 0; lett[j] != '\0'; j++)
 		{
-			if (s[i] == lett[i])
+			if (s[i] == lett[j])
 			{
 				s[i] = numb[j / 2];
 			}
