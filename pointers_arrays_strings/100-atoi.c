@@ -9,9 +9,9 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	res = 0;
-	sign = 1;
-	in_number = 0;
+	int res = 0;
+	int sign = 1;
+	int in_number = 0;
 	
 	while (s[i] != '\0' && (in_number == 0 || (s[i] >= '0' && s[i] <= '9')))
 	{
