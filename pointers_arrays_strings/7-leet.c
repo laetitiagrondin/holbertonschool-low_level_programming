@@ -4,34 +4,22 @@
  * @s: the string to be encoded
  *
  * Return: The encoded string
- */
+i */
 char *leet(char *s)
 {
-	int i = 0;
+	int i, j;
+	char numb[] = {'4', '3', '0', '7', '1'};
+	char lett[] = "aAeEoOtTlL";
 
-	while (s[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		for (j = 0; lett[j] != '\0'; j++)
 		{
-			s[i] = '4';
+			if (str[i] == lett[i])
+			{
+				str[i] = numb[j / 2];
+			}
 		}
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		else if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
-		}
-		i++;
 	}
-	return s;
+	return str;
 }
