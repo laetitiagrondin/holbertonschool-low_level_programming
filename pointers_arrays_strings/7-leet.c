@@ -11,15 +11,15 @@ char *leet(char *s)
 	char numb[] = {'4', '3', '0', '7', '1'};
 	char lett[] = "aAeEoOtTlL";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; lett[j] != '\0'; j++)
 		{
-			if (str[i] == lett[i])
+			if (s[i] == lett[i])
 			{
-				str[i] = numb[j / 2];
+				s[i] = numb[j / 2];
 			}
 		}
 	}
-	return str;
+	return s;
 }
