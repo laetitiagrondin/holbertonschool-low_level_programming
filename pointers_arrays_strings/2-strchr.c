@@ -4,7 +4,7 @@
  * @s: pointer to the string
  * @c: character in the string to be found
  *
- * Return: A pointer to the first occurence
+ * Return: A pointer to the first occurrence
  * of the character c in the string s,
  * or NULL if the character is not found
  */
