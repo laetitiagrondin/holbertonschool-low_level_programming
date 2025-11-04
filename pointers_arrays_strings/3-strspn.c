@@ -2,7 +2,7 @@
 /**
  * _strspn - Gets the length of a prefix substring
  * @s: a pointer to the string
- * @accept: string
+ * @accept: string containing  the accepted characters
  *
  * Return: the number of bytes in the initial segment of s
  * which consist only of bytes from acept
@@ -10,21 +10,16 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
-	int found;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		found = 0;
-		for (j = 0; accept[j] != '\0')
+		for (j = 0; accept[j] != '\0' &&
+				s[i] != accept[j]; j++);
 		{
-			if (s[i] == accept[j])
+			if (accept[j] == '\0')
 			{
-				found = 1;
+				return(i);
 			}
-		}
-		if (found == 0)
-		{
-			return(i);
 		}
 	}
 	return(i);
