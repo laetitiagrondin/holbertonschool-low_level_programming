@@ -25,7 +25,7 @@ int _sqrt_recursive(int n, int i)
  *
  * Return; The natural square root of n if it exists, otherwise -1
  */
-int _sqrt_recursive(int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
