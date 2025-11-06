@@ -23,7 +23,7 @@ int _sqrt_recursive(int n, int i)
  * _sqrt_recursion - main function to call the recursive function
  * @n: the number whose square root we want to find
  *
- * Return; The natural square root of n if it exists, otherwise -1
+ * Return: The natural square root of n if it exists, otherwise -1
  */
 int _sqrt_recursion(int n)
 {
