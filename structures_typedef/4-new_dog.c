@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *d;
 	int i;
 
-	if (name == NULL || owner = NULL)
+	if (name == NULL || owner == NULL)
 	{
 		return (NULL);
 	}
@@ -41,7 +41,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		i++;
 	}
 	d->name[i] = '\0';
-	len = 0;
+	i = 0;
 	while (owner[i] != '\0')
 	{
 		i++;
