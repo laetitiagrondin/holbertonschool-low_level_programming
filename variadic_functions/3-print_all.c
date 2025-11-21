@@ -7,7 +7,7 @@
  */
 void print_c(va_list args)
 {
-	printf("%c", (char)va_arg(args, int));
+	printf("%c", va_arg(args, int));
 }
 
 /**
@@ -23,7 +23,7 @@ void print_i(va_list args)
  */
 void print_f(va_list args)
 {
-	printf("%f", (double)va_arg(args_double));
+	printf("%f", va_arg(args, double));
 }
 
 /**
@@ -35,7 +35,7 @@ void print_s(va_list args)
 
 	if (s != NULL)
 	{
-		printf("\s", s);
+		printf("%s", s);
 	}
 	if (s == NULL)
 	{
@@ -51,29 +51,29 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int j = 0;
-	int k = 1;
-	int l;
+	int fir;
+	int v = 1;
 	char types[] = "cifs";
 	void (*func[])(va_list) = { print_c, print_i, print_f, print_s };
 
 	va_start(args, format);
-	while (format != NULL && format[i] != '\0')
+	while (format != NULL && format[j] != '\0')
 	{
 		j = 0;
-		while (types[j] != '\0' && types[j] != format[i])
+		while (types[k] != '\0' && types[k] != format[j])
 		{
-			j++;
+			k++;
 		}
-		if (types[j] != '\0')
+		if (types[k] != '\0')
 		{
-			if (l == 0)
+			if (fir == 0)
 			{
 				printf(", ");
 			}
-			func[j](args);
-			l = 0;
+			func[k](args);
+			fir = 0;
 		}
-		i++;
+		j++;
 	}
 	va_end(args);
 	printf("\n");
