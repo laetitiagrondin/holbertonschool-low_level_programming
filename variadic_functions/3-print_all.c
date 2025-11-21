@@ -32,7 +32,10 @@ void print_f(va_list args)
 void print_s(va_list args)
 {
 	char *s = va_arg(args, char *);
-	char *arr[2] = {"(nil)", s};
+	char *choice[2];
+
+	arr[0] = "(nil)";
+	arr[1] = s;
 	printf("%s", arr[s != NULL]);
 }
 
