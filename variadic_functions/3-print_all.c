@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 	int j = 0;
 	int k;
 	int v = 0;
-	char types[] = {'c','i','f','s','\0'};
+	char types[] = {'c', 'i', 'f', 's', '\0'};
 	void (*func[])(va_list) = { print_c, print_i, print_f, print_s };
 
 	va_start(args, format);
