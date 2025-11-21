@@ -4,6 +4,7 @@
 
 /**
  * print_c - Prints a char from va_list
+ * @args: va_list containing the char to print
  */
 void print_c(va_list args)
 {
@@ -12,6 +13,7 @@ void print_c(va_list args)
 
 /**
  * print_i - Prints an integer from va_list
+ * @args: va_list containing the integer to print
  */
 void print_i(va_list args)
 {
@@ -20,6 +22,7 @@ void print_i(va_list args)
 
 /**
  * print_f - Prints a float from va_list
+ * @args: va_list containing the float to print
  */
 void print_f(va_list args)
 {
@@ -28,6 +31,7 @@ void print_f(va_list args)
 
 /**
  * print_s - Prints a string from va_list or (nil) if NULL
+ * @va_list containing the string to print
  */
 void print_s(va_list args)
 {
