@@ -51,7 +51,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int j = 0;
-	int fir;
+	int k;
 	int v = 1;
 	char types[] = "cifs";
 	void (*func[])(va_list) = { print_c, print_i, print_f, print_s };
@@ -59,19 +59,19 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (format != NULL && format[j] != '\0')
 	{
-		j = 0;
+		k = 0;
 		while (types[k] != '\0' && types[k] != format[j])
 		{
 			k++;
 		}
 		if (types[k] != '\0')
 		{
-			if (fir == 0)
+			if (v == 0)
 			{
 				printf(", ");
 			}
 			func[k](args);
-			fir = 0;
+			v = 0;
 		}
 		j++;
 	}
