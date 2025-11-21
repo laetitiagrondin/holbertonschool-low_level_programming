@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include "3-calc.h"
 
-/** main - Performs simple operations
+/**
+ * main - Performs simple operations
  * @argc: number of elements
  * @argv: array of arguments
  *
