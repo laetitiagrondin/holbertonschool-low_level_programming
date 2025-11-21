@@ -31,7 +31,7 @@ void print_f(va_list args)
 
 /**
  * print_s - Prints a string from va_list or (nil) if NULL
- * @va_list containing the string to print
+ * @args: va_list containing the string to print
  */
 void print_s(va_list args)
 {
