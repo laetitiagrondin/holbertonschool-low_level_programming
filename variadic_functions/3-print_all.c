@@ -32,15 +32,8 @@ void print_f(va_list args)
 void print_s(va_list args)
 {
 	char *s = va_arg(args, char *);
-
-	if (s != NULL)
-	{
-		printf("%s", s);
-	}
-	if (s == NULL)
-	{
-		printf("(nil)");
-	}
+	char *arr[2] = {"(nil)", s};
+	printf("%s", arr[s != NULL]);
 }
 
 /**
@@ -52,8 +45,8 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int j = 0;
 	int k;
-	int v = 1;
-	char types[] = "cifs";
+	int v = 0;
+	char types[] = {'c','i','f','s','\0'};
 	void (*func[])(va_list) = { print_c, print_i, print_f, print_s };
 
 	va_start(args, format);
@@ -64,14 +57,14 @@ void print_all(const char * const format, ...)
 		{
 			k++;
 		}
-		if (types[k] != '\0')
+		if (types[k] == format[j])
 		{
-			if (v == 0)
+			if (v == 1)
 			{
 				printf(", ");
 			}
 			func[k](args);
-			v = 0;
+			v = 1;
 		}
 		j++;
 	}
