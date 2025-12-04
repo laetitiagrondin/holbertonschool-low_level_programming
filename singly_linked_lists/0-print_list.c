@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stddef.h>
+#include <string.h>
 #include "lists.h"
 /**
  * print_list - Prints a list of elements
@@ -9,15 +10,17 @@
  */
 size_t print_list(const list_t *h)
 {
-	while (h->str != NULL)
+	size_t n = 0;
+
+	while (h != NULL)
 	{
-		if (str == NULL)
+		if (h->str == NULL)
 		{
-			printf("[0] (nil)");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-			printf("%s\n", h->str);
+			printf("[%lu] %s\n", strlen(h->str), h->str);
 		}
 		h = h->next;
 		n++;
