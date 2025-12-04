@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stddef.h>
-#include <string.h>
 #include "lists.h"
 /**
  * print_list - Prints a list of elements
  * @h: a pointer to the head of the list
  *
- * Return: the number of nodes, or [0] (nil) if str is NULL
+ * Return: the number of nodes
  */
 size_t print_list(const list_t *h)
 {
 	size_t n = 0;
+	size_t len = 0;
 
 	while (h != NULL)
 	{
@@ -20,7 +20,11 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%lu] %s\n", (unsigned long)strlen(h->str), h->str);
+			while (h->str[len] != '\0')
+			{
+				len++;
+			}
+			printf("[%lu] %s\n", (unsigned long)len, h->str);
 		}
 		h = h->next;
 		n++;
