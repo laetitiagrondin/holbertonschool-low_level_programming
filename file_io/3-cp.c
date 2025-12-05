@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+
 /**
  * copy_file - Copies content of one file to another
  * @file_from: The source file
@@ -53,5 +54,25 @@ int copy_file(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
+	return (0);
+}
+
+/**
+ * main - Entry point of the program,
+ * copies the content of a file to another file
+ * @argc: number of arguments passed to the program
+ * @argv: array of arguments strings
+ *
+ * Return: 0 on success, or exits with 97
+ * if the number of arguments is incorrect
+ */
+int main(int argc, char *argv[])
+{
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	copy_file(argv[1], argv[2]);
 	return (0);
 }
