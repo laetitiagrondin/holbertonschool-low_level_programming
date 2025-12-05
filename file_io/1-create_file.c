@@ -20,10 +20,10 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	fd = open(O_CREAT | O_WRONLY | 0_TRUNC, S_IRUSR | S_IWUSR);
+	fd = open(O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (fd == -1)
 	{
-		return (-1)
+		return (-1);
 	}
 	if (text_content != NULL)
 	{
