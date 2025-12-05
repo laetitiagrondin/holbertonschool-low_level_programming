@@ -3,7 +3,7 @@
 #include <fcntl.h>
 #include "main.h"
 /**
- * int create_file - Creates a file
+ * create_file - Creates a file
  * @filename: the name of the file to create
  * @text_content: a NULL terminated string to write to the file
  *
